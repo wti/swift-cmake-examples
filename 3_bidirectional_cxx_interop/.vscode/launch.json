@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "lldb fib cpp",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "arm64",
+            "program": "${workspaceFolder}/build/src/fibonacci_cpp",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "lldb fib swift",
+            "type": "cppdbg",
+            "request": "launch",
+            "targetArchitecture": "arm64",
+            "program": "${workspaceFolder}/build/src/fibonacci_swift",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        }
+    ]
+}
