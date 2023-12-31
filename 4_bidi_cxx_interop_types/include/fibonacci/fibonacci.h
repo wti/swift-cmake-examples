@@ -12,6 +12,14 @@
 #ifndef FIBONACCI_FIBONACCI_H
 #define FIBONACCI_FIBONACCI_H
 
+#include <swift/bridging>
+
+// if not defined in bridging, compiler support is not available
+#if !defined(SWIFT_SELF_CONTAINED) 
+#error "Swift/C++ interop n/a in compiler"
+#endif
+
 int fibonacci_cpp(int x);
 
+//Swift::string type_string(Swift::string x);
 #endif // FIBONACCI_FIBONACCI_H
