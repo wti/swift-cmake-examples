@@ -11,4 +11,11 @@
 
 import Fibonacci
 
-print(fibonacci_cpp(5))
+func callTypes() {
+    print("\(#function) int: \(DemoTypes.call_int(21))")
+}
+
+callTypes()
+
+print(fibonacci_cpp(3))
+

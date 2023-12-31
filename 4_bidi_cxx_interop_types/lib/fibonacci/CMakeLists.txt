@@ -34,7 +34,7 @@ _swift_generate_cxx_header_target(
 #    flag is propagated to users of the library. Emitting the flag is gated by
 #    the COMPILE_LANGUAGE cmake generator expression to ensure that the flag is
 #    only passed to the Swift compiler and not the C++ compiler.
-add_library(fibonacci STATIC fibonacci.swift fibonacci.cpp)
+add_library(fibonacci STATIC fibonacci.swift fibonacci.cpp types.cpp)
 add_dependencies(fibonacci fibonacci_swift_h)
 target_include_directories(fibonacci PUBLIC "${CMAKE_CURRENT_BINARY_DIR}/include")
 set_target_properties(fibonacci PROPERTIES Swift_MODULE_NAME "SwiftFibonacci")
