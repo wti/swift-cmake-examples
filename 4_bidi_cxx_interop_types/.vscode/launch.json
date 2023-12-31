@@ -1,8 +1,6 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
-
         // https://code.visualstudio.com/docs/cpp/launch-json-reference
         {
             "name": "lldb fib cpp",
